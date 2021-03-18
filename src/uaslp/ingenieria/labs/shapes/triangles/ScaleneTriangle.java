@@ -27,6 +27,6 @@ public class ScaleneTriangle extends Triangle {
 
     public double getArea()
     {
-        return ((((this.side + this.side2 + this.side3)/2)*(((this.side + this.side2 + this.side3)/2)-this.side)*(((this.side + this.side2 + this.side3)/2)-this.side2)*(((this.side + this.side2 + this.side3)/2)-this.side3)));
+        return ((((this.side + this.side2 + this.side3)/2)*(((this.side + this.side2 + this.side3)/2)-this.side)*(((this.side + this.side2 + this.side3)/2)-this.side2)*(((this.side + this.side2 + this.side3)/2)-this.side3))^(1/2));
     }
 }
