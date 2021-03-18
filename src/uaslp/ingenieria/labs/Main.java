@@ -1,6 +1,8 @@
 package uaslp.ingenieria.labs;
 
 import uaslp.ingenieria.labs.shapes.*;
+import uaslp.ingenieria.labs.shapes.triangles.IsoscelesTriangle;
+import uaslp.ingenieria.labs.shapes.triangles.ScaleneTriangle;
 import uaslp.ingenieria.labs.shapes.triangles.TriangleEquilatero;
 
 import java.util.LinkedList;
@@ -17,15 +19,16 @@ public class Main {
         shapes.add(new Rectangle(14, 10));
         shapes.add(new Square(10));
         shapes.add(new TriangleEquilatero(6));
+        shapes.add(new IsoscelesTriangle(5,7));
+        shapes.add(new ScaleneTriangle(3,4,5));
 
-        for (Shape shape : shapes) {
+        for (Shape shape : shapes)
+        {
             System.out.println("Name: " + shape.getName());
             System.out.println("Sides count: " + shape.getSidesCount());
             System.out.println("Perimeter: " + shape.getPerimeter());
             System.out.println("Area: " + shape.getArea());
             System.out.println("-----------------------------------------------");
         }
-
-
     }
 }
